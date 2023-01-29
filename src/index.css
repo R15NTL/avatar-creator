@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button-multiplayer {
+    @apply rounded-md flex mx-auto my-4 bg-multiplayerDark font-medium text-light px-4 py-2 
+    transition duration-150 ease-in-out
+       hover:bg-multiplayerLight 
+       active:bg-multiplayerDark;
+  }
+  .button-singleplayer {
+    @apply rounded-md flex mx-auto my-4 bg-singlePlayerDark font-medium text-light px-4 py-2 
+    transition duration-150 ease-in-out
+    hover:bg-singlePlayerLight
+    active:bg-singlePlayerDark;
+  }
+  .button-misc {
+    @apply rounded-md flex mx-auto my-4 bg-miscDark font-medium text-light px-4 py-2 shadow-slate-800 shadow-xl
+    transition duration-150 ease-in-out
+    hover:bg-miscLight
+    active:bg-miscDark;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.flip-x {
+  transform: scaleX(-1);
+}
+
+.flip-y {
+  transform: scaleY(-1);
 }
