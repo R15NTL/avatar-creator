@@ -1,10 +1,18 @@
-import React from 'react'
-import { interfaceTree , styleOptions, pathOptions } from '../../../avatars/avatarCreator/avatarTree'
-import AvatarColorOption from '../../buttons/AvatarColorOption'
-import AvatarComponentOption from '../../buttons/AvatarComponentOption'
-import ColorMenu from './components/ColorMenu'
+import React from "react";
+import {
+  interfaceTree,
+  styleOptions,
+  pathOptions,
+} from "../../../avatars/avatarCreator/avatarTree";
+import AvatarColorOption from "../../buttons/AvatarColorOption";
+import AvatarComponentOption from "../../buttons/AvatarComponentOption";
+import ColorMenu from "./components/ColorMenu";
+import { useSelector } from "react-redux";
+import AvatarOptionMenu from "./components/AvatarOptionMenu";
+import ComponentMenu from "./components/ComponentMenu";
 
 function AvatarInterface() {
+  /*
     const interfaceNames = Object.keys(interfaceTree)
 
     const interfaceComponents = interfaceNames.map((interfaceName) => {
@@ -57,17 +65,30 @@ function AvatarInterface() {
        name={interfaceComponent.name} 
        colorOptionElements={interfaceComponent.colorOptionElements}
        />
-    })
+    })*/
 
+  const interfaceSelected = useSelector((state) => state.avatarSelectionMenu);
   return (
-    <div>
-        {
-        menuElements.map((menuElement) => {
-            return menuElement
-            })
-            }
+    <div className="flex-1 h-full flex">
+      <div
+        className={`flex-1   ${
+          interfaceSelected !== null ? "max-lg:hidden" : ""
+        }
+      
+      `}
+      >
+        <AvatarOptionMenu />
+      </div>
+      <div className=" w-px  bg-slate-500 max-lg:hidden "></div>
+      <div
+        className={`flex-1 h-full flex ${
+          interfaceSelected === null ? "max-lg:hidden" : ""
+        } `}
+      >
+        <ComponentMenu />
+      </div>
     </div>
-  )
+  );
 }
 
-export default AvatarInterface
+export default AvatarInterface;

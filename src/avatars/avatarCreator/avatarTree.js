@@ -19,7 +19,6 @@ const styleOptions = {
         ["stroke-miterlimit", "10"],
         ["stroke-width", "7px"],
       ],
-      zIndexRear: [["fill", "none"]],
     },
   ],
   skinColor: [
@@ -61,26 +60,30 @@ const optionButtons = {
 
 const interfaceTree = {
   skinColor: {
-    type: "color",
-    name: "Skin color",
-    description: "Select the color of the skin",
-    styleIndex: 1,
-  },
-  hairColor: {
-    type: "color",
-    name: "Hair color",
-    description: "Select the color of the hair",
-    styleIndex: 2,
+    components: false,
+    componentIndex: null,
+    title: "Skin color",
+    description: null,
+    styleIndex: null,
+    colors: "skinColor",
+    colorTitle: "Skin color",
+    colorDicription: "Select the color of the skin",
+    colorIndex: 1,
+    iconComponentName: "skin",
+    iconComponentIndex: 0,
   },
   hair: {
-    type: "component",
-    name: "Hair",
+    components: "hair",
+    componentIndex: 1,
+    title: "Hair",
     description: "Select the hair style",
     styleIndex: 1,
     colors: "hairColor",
-    colorName: "Hair color",
+    colorTitle: "Hair color",
     colorDicription: "Select the color of the hair",
     colorIndex: 2,
+    iconComponentName: "hair",
+    iconComponentIndex: 1,
   },
 };
 

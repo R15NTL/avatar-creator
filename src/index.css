@@ -23,6 +23,18 @@
   }
 }
 
+.w-wire-frame {
+  width: 1px;
+}
+
+.h-wire-frame {
+  height: 1px;
+}
+
+.border-wire-frame {
+  border-width: 1px;
+}
+
 .flip-x {
   transform: scaleX(-1);
 }

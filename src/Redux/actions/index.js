@@ -15,3 +15,12 @@ export const updateAvatarComponentSelectorOption = (index, newValue) => {
     });
   };
 };
+
+export const updateAvatarSelectionMenu = (newValue) => {
+  return (dispatch) => {
+    dispatch({
+      type: "MENU_SELECTED",
+      payload: newValue,
+    });
+  };
+};
