@@ -33,7 +33,7 @@ function BaseSkin() {
         id="rect27"
       />
       <path
-        className="leftInnerEar"
+        className="skinShadowed"
         d="M125.22,220.26a10.44,10.44,0,1,0,0,20.88Z"
         id="path29"
       />
@@ -58,7 +58,7 @@ function BaseSkin() {
         y2="316.88"
         id="line61"
       />
-   </>
+    </>
   );
 }
 

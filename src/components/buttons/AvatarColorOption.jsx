@@ -4,7 +4,7 @@ import { bindActionCreators } from "redux";
 import { actionCreators } from "../../Redux";
 
 export const AvatarColorOption = (props) => {
-  const { menuIndex, optionIndex } = props;
+  const { menuIndex, optionIndex, option } = props;
   const selectedButtonInThisMenu = useSelector(
     (state) => state.avatarStyleSelector[menuIndex]
   );
@@ -16,17 +16,22 @@ export const AvatarColorOption = (props) => {
     dispatch
   );
 
-  const colors = Object.keys(props.option).map((optionName) => {
-    return props.option[optionName][0][1];
+  const colors = Object.keys(option).map((optionName) => {
+    return option[optionName][0][1];
   });
   return (
     <div
       style={{
         backgroundColor: colors[0],
-        marginLeft: selectedButtonInThisMenu === optionIndex ? "10px" : "0px",
       }}
-      className="w-24 h-8 flex flex-row outline outline-0 rounded-tr-md rounded-tl-2xl rounded-bl-sm rounded-br-2xl outline-multiplayerDark 
-      hover:outline-4 cursor-pointer  overflow-hidden"
+      className={` transition-all duration-250 h-8 ml-2 shadow-sm flex flex-row rounded-tr-md rounded-tl-2xl 
+      rounded-bl-sm rounded-br-2xl cursor-pointer  overflow-hidden
+      sm:h-12
+       ${
+         selectedButtonInThisMenu === optionIndex
+           ? "mr-4 hover:mr-2"
+           : "mr-12 hover:mr-10"
+       } `}
       onClick={() => updateAvatarStyleSelectorOption(menuIndex, optionIndex)}
     >
       <div
@@ -35,11 +40,15 @@ export const AvatarColorOption = (props) => {
       >
         <div
           style={{ backgroundColor: colors[1] || colors[0] }}
-          className="flex-1 flex ml-2 rounded-tl-2xl "
+          className={`flex-1 flex  rounded-tl-2xl transition-all duration-250
+          ${selectedButtonInThisMenu === optionIndex ? "ml-4" : "ml-2"}
+          `}
         >
           <div
             style={{ backgroundColor: colors[0] }}
-            className="flex-1 ml-4 rounded-tl-2xl "
+            className={`flex-1 rounded-tl-2xl transition-all duration-250
+            ${selectedButtonInThisMenu === optionIndex ? "ml-8" : "ml-4"}
+            `}
           ></div>
         </div>
       </div>

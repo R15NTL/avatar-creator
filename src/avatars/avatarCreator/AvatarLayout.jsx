@@ -9,13 +9,12 @@ function AvatarLayout({ styleOptions, pathOptions }) {
     <div className=" h-screen flex flex-col bg-slate-700 text-light">
       <HeaderAvatarCreator text="Create your custom avatar" />
       <main className="  flex-1 flex flex-col  sm:flex-row-reverse">
-        <section className=" flex-1 bg-purple-500 ">
-          <div
-            className=" my-auto mx-auto sm:max-w-full"
-            style={{ maxWidth: "275px" }}
-          >
+        <section className=" flex-1 bg-purple-500 flex ">
+          <div className="w-9 phone-sm:w-16 phone-lg:w-28 sm:hidden"></div>
+          <div className=" flex-1 my-auto mx-auto sm:max-w-full place-items-center grid">
             <AvatarSvg styleOptions={styleOptions} pathOptions={pathOptions} />
           </div>
+          <div className=" w-9 phone-sm:w-16 phone-lg:w-28 sm:hidden"></div>
         </section>
 
         <section className=" flex-1 lg:w-3/5 flex ">

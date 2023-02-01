@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg76"
+   sodipodi:docname="maleSmile.svg"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview313"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.7617188"
+     inkscape:cx="223.36142"
+     inkscape:cy="256"
+     inkscape:window-width="1390"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg76" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">
+         .skinPrimary {
+            fill: #fcca92;
+         }
+
+         .skinShadowed {
+            fill: #daa25d;
+         }
+
+
+
+
+
+         .leftInnerEar {
+            fill: #bc9267;
+         }
+      </style>
+  </defs>
+  <title
+     id="title6">Avatar Users2</title>
+  <metadata
+     id="metadata913">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Avatar Users2</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     class="cls-12"
+     d="m 234.34837,321.69329 a 2.0487761,2.0487761 0 0 0 -2.0401,2.21373 c 1.11121,13.69901 12.4142,26.39969 26.19137,26.39969 v 0 c 13.77714,0 25.08013,-12.70068 26.19133,-26.39969 a 2.040095,2.040095 0 0 0 -2.0314,-2.21373 z"
+     id="path1792"
+     style="fill:#ffffff;stroke-width:0.868126" />
+</svg>

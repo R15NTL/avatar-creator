@@ -7,6 +7,7 @@ import { actionCreators } from "../../Redux";
 function AvatarOptionButton({
   iconComponentIndex,
   iconComponentName,
+  iconViewBox,
   title,
   buttonIndex,
 }) {
@@ -25,7 +26,7 @@ function AvatarOptionButton({
 
   return (
     <button
-      className={`text-center border border-slate-500 m-2 p-1 rounded-sm 
+      className={`text-center border border-slate-500 m-2 p-1 rounded-sm shadow-sm shadow-singlePlayer850
     transition duration-200 ease-in-out
     hover:bg-slate-600 
     active:bg-singlePlayer550  active:border-slate-500
@@ -47,7 +48,7 @@ function AvatarOptionButton({
     >
       <div className="p-1">
         <svg
-          viewBox="0 0 512 512"
+          viewBox={iconViewBox}
           version="1.1"
           id="svg64"
           xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +58,7 @@ function AvatarOptionButton({
       </div>
       <div
         className={`
-        my-2 h-wire-frame rounded-sm transition duration-200 ease-in-out
+        mt-2 h-wire-frame rounded-sm transition duration-200 ease-in-out
       ${
         hover
           ? clickedButtonIndex === buttonIndex
@@ -69,7 +70,7 @@ function AvatarOptionButton({
       }
       `}
       ></div>
-      <p className=" font-light">{title}</p>
+      <p className=" my-1 font-light">{title}</p>
     </button>
   );
 }

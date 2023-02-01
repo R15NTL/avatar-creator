@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg76"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4">
+    <style
+       id="style2">
+         .skinPrimary {
+            fill: #fcca92;
+         }
+
+         .skinShadowed {
+            fill: #daa25d;
+         }
+
+
+
+
+
+         .leftInnerEar {
+            fill: #bc9267;
+         }
+      </style>
+  </defs>
+  <title
+     id="title6">Avatar Users2</title>
+  <path
+     class="cls-10"
+     d="m 233.60475,261.5 a 33.118419,33.118419 0 0 1 -50.46832,28.26587 34.085314,34.085314 0 0 1 -6.83152,-5.57546 33.055165,33.055165 0 0 1 -8.29541,-16.11191 33.579276,33.579276 0 0 1 -0.65062,-6.58754 33.109382,33.109382 0 0 1 33.11841,-33.10938 33.488912,33.488912 0 0 1 6.57851,0.65062 33.109382,33.109382 0 0 1 21.64218,15.11791 32.684672,32.684672 0 0 1 3.69589,8.4671 33.073237,33.073237 0 0 1 1.21088,8.88279 z"
+     id="path1121"
+     style="fill:#bbe4f9;stroke-width:0.90364" />
+  <path
+     class="cls-11"
+     d="m 223.12252,237.35473 -46.81761,46.81761 a 33.055165,33.055165 0 0 1 -8.29541,-16.09385 l 39.0463,-39.04629 a 33.109382,33.109382 0 0 1 16.06672,8.32253 z"
+     id="path1123"
+     style="fill:#e1f2f9;stroke-width:0.90364" />
+  <path
+     class="cls-11"
+     d="m 232.39387,252.62625 -40.78128,40.75418 a 32.910581,32.910581 0 0 1 -8.47616,-3.69588 l 45.56155,-45.56156 a 32.684672,32.684672 0 0 1 3.69589,8.50326 z"
+     id="path1125"
+     style="fill:#e1f2f9;stroke-width:0.90364" />
+  <circle
+     class="cls-12"
+     cx="200.47726"
+     cy="261.5"
+     r="33.118423"
+     id="circle1127"
+     style="fill:none;stroke:#27273d;stroke-width:6.32548px;stroke-linecap:round;stroke-miterlimit:10" />
+  <path
+     class="cls-10"
+     d="m 346.63209,261.5 a 33.118419,33.118419 0 0 1 -50.45929,28.26587 33.778076,33.778077 0 0 1 -6.82248,-5.57546 32.982873,32.982873 0 0 1 -8.29541,-16.11191 33.579276,33.579276 0 0 1 -0.65966,-6.58754 33.118419,33.118419 0 0 1 33.12745,-33.10938 33.488912,33.488912 0 0 1 6.5785,0.65062 33.037092,33.037092 0 0 1 21.63315,15.11791 32.377434,32.377434 0 0 1 3.6959,8.4671 33.073237,33.073237 0 0 1 1.20184,8.88279 z"
+     id="path1129"
+     style="fill:#bbe4f9;stroke-width:0.90364" />
+  <path
+     class="cls-11"
+     d="m 336.16793,237.35473 -46.81761,46.81761 a 32.982873,32.982873 0 0 1 -8.29541,-16.09385 L 320.1012,229.0322 a 33.154565,33.154565 0 0 1 16.06673,8.32253 z"
+     id="path1131"
+     style="fill:#e1f2f9;stroke-width:0.90364" />
+  <path
+     class="cls-11"
+     d="m 345.43025,252.62625 -40.78129,40.75418 a 33.190711,33.190711 0 0 1 -8.47616,-3.69588 l 45.56155,-45.56156 a 32.377434,32.377434 0 0 1 3.6959,8.50326 z"
+     id="path1133"
+     style="fill:#e1f2f9;stroke-width:0.90364" />
+  <circle
+     class="cls-12"
+     cx="313.52271"
+     cy="261.5"
+     r="33.118423"
+     id="circle1135"
+     style="fill:none;stroke:#27273d;stroke-width:6.32548px;stroke-linecap:round;stroke-miterlimit:10" />
+  <path
+     class="cls-12"
+     d="m 233.60475,261.5 c 0,0 18.36197,-15.53358 46.80857,0"
+     id="path1137"
+     style="fill:none;stroke:#27273d;stroke-width:6.32548px;stroke-linecap:round;stroke-miterlimit:10" />
+  <metadata
+     id="metadata913">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Avatar Users2</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -5,6 +5,7 @@ import PathGenerator from "./pathGenerator";
 function AvatarSvg(props) {
   return (
     <svg
+      className=" h-full w-full"
       viewBox="0 0 512 512"
       version="1.1"
       id="svg64"

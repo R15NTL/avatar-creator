@@ -42,3 +42,7 @@
 .flip-y {
   transform: scaleY(-1);
 }
+
+body {
+  overflow: hidden;
+}

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
 import { actionCreators } from "../../Redux";
 
 export const AvatarComponentOption = (props) => {
-  const { componentIndex, optionIndex, option } = props;
+  const { componentIndex, optionIndex, option, imgViewBox } = props;
+
+  const [hover, setHover] = useState(false);
 
   const selectedButtonInThisMenu = useSelector(
     (state) => state.avatarComponentSelector[componentIndex]
@@ -19,18 +21,26 @@ export const AvatarComponentOption = (props) => {
 
   const component = option;
   return (
-    <div
-      style={{
-        marginLeft: selectedButtonInThisMenu === optionIndex ? "10px" : "0px",
-      }}
-      className=" bg-slate-600"
+    <button
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+      className={`mx-1 h-fit text-center border border-slate-500 my-1 p-1 rounded-sm shadow-sm shadow-singlePlayer950
+      transition duration-200 ease-in-out
+      hover:bg-slate-600 
+      active:bg-singlePlayer550  active:border-slate-500
+      ${
+        selectedButtonInThisMenu === optionIndex
+          ? " bg-singlePlayer500 border-singlePlayer400 hover:bg-singlePlayer400 hover:border-singlePlayer250"
+          : "hover:bg-slate-600 "
+      }
+      `}
       onClick={() =>
         updateAvatarComponentSelectorOption(componentIndex, optionIndex)
       }
     >
-      <div className=" h-16 ">
+      <div className=" ">
         <svg
-          viewBox="0 0 512 512"
+          viewBox={imgViewBox}
           version="1.1"
           id="svg64"
           xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +48,7 @@ export const AvatarComponentOption = (props) => {
           <g>{React.cloneElement(component)}</g>
         </svg>
       </div>
-    </div>
+    </button>
   );
 };
 
