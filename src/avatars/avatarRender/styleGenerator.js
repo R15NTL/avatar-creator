@@ -11,8 +11,6 @@ function StyleGenerator({ selectedOptions }) {
 
   let allStyles = {};
 
-  // Add relationships
-
   selectedStyles.forEach((option) => {
     for (let className in option) {
       allStyles[className] = option[className];
