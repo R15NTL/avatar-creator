@@ -41,14 +41,28 @@ function ComponentMenu() {
           <div className="h-2"></div>
           {colorComponentElements ? colorComponentElements : ""}
         </section>
-        <div className=" w-px bg-slate-600"></div>
+        <div
+          className={` w-px bg-slate-600 ${
+            optionComponentElements && colorComponentElements ? "" : "hidden"
+          }`}
+        ></div>
         <section
           className={`flex-1 flex flex-col
         ${optionComponentElements ? "" : "hidden"}
         `}
         >
           <div className="h-1"></div>
-          <div className=" grid grid-cols-2 px-1 phone-md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-1 h-fit overflow-hidden overflow-y-auto">
+          <div
+            className={`grid grid-cols-2 px-1 h-fit overflow-hidden overflow-y-auto
+          phone-md:grid-cols-3 
+          
+          ${
+            colorComponentElements
+              ? `sm:grid-cols-2 lg:grid-cols-1 `
+              : `sm:grid-cols-3 lg:grid-cols-2`
+          }
+          `}
+          >
             {optionComponentElements ? optionComponentElements : ""}
           </div>
         </section>

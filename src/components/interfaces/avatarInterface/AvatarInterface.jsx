@@ -24,10 +24,7 @@ function AvatarInterface() {
       >
         <AvatarOptionMenu />
       </div>
-      <div className=" flex flex-col w-px  max-lg:hidden shadow ">
-        <div className=" bg-slate-700 h-10"></div>
-        <div className="bg-slate-600 flex-1"></div>
-      </div>
+
       <div
         className={`flex-1 h-full flex ${
           interfaceSelected === null ? "max-lg:hidden" : ""

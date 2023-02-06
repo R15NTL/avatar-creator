@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg76"
+   sodipodi:docname="baseBackground.svg"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview737"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.1018981"
+     inkscape:cx="266.35856"
+     inkscape:cy="310.37351"
+     inkscape:window-width="1390"
+     inkscape:window-height="1052"
+     inkscape:window-x="530"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg76" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">
+         .skinPrimary {
+            fill: #fcca92;
+         }
+
+         .skinShadowed {
+            fill: #daa25d;
+         }
+
+
+
+
+
+         .leftInnerEar {
+            fill: #bc9267;
+         }
+      </style>
+  </defs>
+  <title
+     id="title6">Avatar Users2</title>
+  <metadata
+     id="metadata913">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Avatar Users2</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     style="fill:#ffd5d5"
+     id="rect988"
+     width="525.45691"
+     height="520.01172"
+     x="-10.890299"
+     y="-4.5376248" />
+  <path
+     class="cls-2"
+     d="M 601.60684,465.3432 A 388.07627,388.07627 0 0 1 464.61742,617.26679 c -1.6912,1.10229 -3.38243,2.15932 -5.10386,3.23142 l -0.86072,0.52851 a 384.08985,384.08985 0 0 1 -109.47677,45.95005 c -4.71129,1.17781 -9.46785,2.24995 -14.26974,3.24655 a 390.0846,390.0846 0 0 1 -163.23364,-1.22313 c -4.78676,-1.07211 -9.54336,-2.21974 -14.26973,-3.47303 A 384.05962,384.05962 0 0 1 51.973058,619.96969 l -1.781832,-1.10229 -2.944547,-1.88753 A 388.19708,388.19708 0 0 1 -89.289737,465.3432 388.51419,388.51419 0 0 1 62.875442,304.11788 v 0 q 4.333759,-2.49154 8.727924,-4.89246 h 0.07546 q 9.633971,-5.25488 19.630322,-9.95107 l 2.023455,-0.95131 q 16.897157,-7.86722 34.639947,-14.10363 7.36892,-2.58213 14.88885,-4.87738 v 0 l 2.86904,-0.8758 3.57874,-1.05701 0.78523,-0.22652 q 14.69253,-4.19788 29.86826,-7.20282 c 3.24656,-0.64929 6.52334,-1.25331 9.8001,-1.82711 a 390.53763,390.53763 0 0 1 140.22084,1.40432 q 15.56837,3.02004 30.65349,7.24812 l 5.37573,1.51001 c 1.9328,0.57378 3.88072,1.16272 5.81356,1.76673 q 12.7446,3.98647 25.11173,8.83365 6.50819,2.55193 12.89561,5.33038 7.7313,3.35224 15.28144,7.03671 9.16586,4.53007 18.12029,9.39236 3.44285,1.90262 6.8404,3.88077 l 2.31034,1.35901 c 1.93284,1.14761 3.86568,2.31033 5.76829,3.47304 A 388.71051,388.71051 0 0 1 601.6068,465.35831 Z"
+     id="path648"
+     style="fill:#6cb7e0;stroke-width:1.51003" />
+</svg>

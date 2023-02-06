@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg76"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4">
+    <style
+       id="style2">
+         .skinPrimary {
+            fill: #fcca92;
+         }
+
+         .skinShadowed {
+            fill: #daa25d;
+         }
+
+
+
+
+
+         .leftInnerEar {
+            fill: #bc9267;
+         }
+
+         .hairLightShade {
+            fill: #ee05da;
+         }
+
+         .hairDarkShade {
+            fill: #450143;
+         }
+
+         .hairMediumShade {
+            fill: #71017b;
+         }
+      </style>
+  </defs>
+  <title
+     id="title6">Avatar Users2</title>
+  <g
+     id="Icons">
+    <path
+       class="cls-11"
+       d="m 373.37783,290.05933 c -4.18659,52.55907 -48.25465,71.00006 -80.81408,99.54507 a 52.640626,52.640626 0 0 1 -70.13919,0 C 189.52983,360.7694 144.8637,342.19249 141.49267,288.38288 v 0 c 0,0 19.2656,25.23741 52.06065,48.02812 a 6.3433359,6.3433359 0 0 0 9.01662,-1.73989 31.172965,31.172965 0 0 1 6.13489,-6.81456 c 7.65733,-6.42487 21.74859,-12.90416 47.48442,-13.11258 h 1.27771 c 35.34145,0.29904 48.70774,12.37857 53.62838,19.93621 a 6.3433359,6.3433359 0 0 0 9.00755,1.73988 c 32.79503,-22.82696 52.06972,-48.02813 52.06972,-48.02813 z"
+       id="path45"
+       style="fill:#d89c93;stroke-width:0.906191" />
+  </g>
+  <metadata
+     id="metadata913">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Avatar Users2</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

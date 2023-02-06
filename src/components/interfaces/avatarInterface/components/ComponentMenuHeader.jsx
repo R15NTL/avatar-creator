@@ -15,7 +15,7 @@ function ComponentMenuHeader({ interFaceName, colorTitle, componentTitle }) {
   const closeButtonToShow = componentTitle ? 2 : 1;
 
   return (
-    <header className="flex align-middle font-light bg-slate-600 h-10">
+    <header className="flex align-middle font-light bg-slate-600 h-10 sticky top-0">
       <section className={`flex-1 p-2 flex ${colorTitle ? "" : `hidden`}`}>
         <h1 className="flex-1">{colorTitle}:</h1>
         <button
@@ -29,7 +29,11 @@ function ComponentMenuHeader({ interFaceName, colorTitle, componentTitle }) {
           <Close color={isHovered ? "#9C59F5" : "#F1F1F1"} key={"frb849"} />
         </button>
       </section>
-      <div className="w-px bg-slate-700"></div>
+      <div
+        className={`w-px bg-slate-700 ${
+          componentTitle && colorTitle ? "" : "hidden"
+        }`}
+      ></div>
       <section className={`flex-1 p-2 flex ${componentTitle ? "" : `hidden`}`}>
         <h1 className="flex-1">{componentTitle}:</h1>
         <button

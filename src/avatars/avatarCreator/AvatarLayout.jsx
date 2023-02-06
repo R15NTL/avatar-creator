@@ -7,18 +7,23 @@ import { connect } from "react-redux";
 function AvatarLayout({ styleOptions, pathOptions }) {
   return (
     <div className=" h-screen flex flex-col bg-slate-700 text-light">
-      <HeaderAvatarCreator text="Create your custom avatar" />
-      <main className="  flex-1 flex flex-col  sm:flex-row-reverse">
-        <section className=" flex-1 bg-purple-500 flex ">
-          <div className="w-9 phone-sm:w-16 phone-lg:w-28 sm:hidden"></div>
+      <main className=" pt-10 h-screen flex-1 grid grid-rows-2  sm:grid-cols-2">
+        <div className=" fixed top-0 w-screen">
+          <HeaderAvatarCreator text="Create your custom avatar" />
+        </div>
+        <section className=" row-span-1 bg-light flex sm:col-span-1 sm:row-span-2 sm:hidden">
+          <div className="w-9 phone-sm:w-16 phone-lg:w-28 phone-xl:w-40 "></div>
           <div className=" flex-1 my-auto mx-auto sm:max-w-full place-items-center grid">
             <AvatarSvg styleOptions={styleOptions} pathOptions={pathOptions} />
           </div>
-          <div className=" w-9 phone-sm:w-16 phone-lg:w-28 sm:hidden"></div>
+          <div className=" w-9 phone-sm:w-16 phone-lg:w-28 phone-xl:w-40 "></div>
         </section>
 
-        <section className=" flex-1 lg:w-3/5 flex ">
+        <section className=" row-span-1 sm:col-span-1 sm:row-span-2 flex overflow-auto">
           <AvatarInterface />
+        </section>
+        <section className=" max-sm:hidden sm:col-span-1 sm:row-span-2 bg-light p-16 ">
+          <AvatarSvg styleOptions={styleOptions} pathOptions={pathOptions} />
         </section>
       </main>
     </div>

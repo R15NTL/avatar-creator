@@ -47,6 +47,10 @@ module.exports = {
 
       "phone-lg": "414px",
       // => @media (min-width: 414px) { ... }
+
+      "phone-xl": "512px",
+      // => @media (min-width: 512px) { ... }
+
       sm: "640px",
       // => @media (min-width: 640px) { ... }
       md: "768px",

@@ -1,19 +1,9 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
-import { pathOptions } from "../../avatars/avatarCreator/avatarTree";
 import { actionCreators } from "../../Redux";
 
-function AvatarOptionButton({
-  iconComponentIndex,
-  iconComponentName,
-  iconViewBox,
-  title,
-  buttonIndex,
-}) {
-  const thisIconIndex = useSelector(
-    (state) => state.avatarComponentSelector[iconComponentIndex]
-  );
+function AvatarOptionButton({ icon, title, buttonIndex }) {
   const clickedButtonIndex = useSelector((state) => state.avatarSelectionMenu);
   const dispatch = useDispatch();
   const { updateAvatarSelectionMenu } = bindActionCreators(
@@ -21,8 +11,6 @@ function AvatarOptionButton({
     dispatch
   );
   const [hover, setHover] = useState(false);
-
-  const thisIcon = pathOptions[iconComponentName][thisIconIndex];
 
   return (
     <button
@@ -48,12 +36,12 @@ function AvatarOptionButton({
     >
       <div className="p-1">
         <svg
-          viewBox={iconViewBox}
+          viewBox="0 0 512 512"
           version="1.1"
           id="svg64"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g>{React.cloneElement(thisIcon)}</g>
+          <g>{React.cloneElement(icon)}</g>
         </svg>
       </div>
       <div

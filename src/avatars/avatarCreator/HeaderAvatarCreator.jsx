@@ -1,4 +1,5 @@
 import React from "react";
+import AvatarDownloadButton from "../AvatarDownloadButton";
 
 function HeaderAvatarCreator({ text }) {
   return (
@@ -6,6 +7,7 @@ function HeaderAvatarCreator({ text }) {
       <h1 className=" inline-block mx-auto font-light text-lg text-light">
         {text}
       </h1>
+      <AvatarDownloadButton />
     </header>
   );
 }
