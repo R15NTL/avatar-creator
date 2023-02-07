@@ -26,7 +26,7 @@ function AvatarInterface() {
       </div>
 
       <div
-        className={`flex-1 h-full flex ${
+        className={`flex-1 flex ${
           interfaceSelected === null ? "max-lg:hidden" : ""
         } `}
       >

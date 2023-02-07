@@ -1,6 +1,7 @@
 import React from "react";
 import { interfaceTree } from "../../../../avatars/avatarCreator/avatarTree";
 import AvatarOptionButton from "../../../buttons/AvatarOptionButton";
+import AvatarDownloadButton from "../../../buttons/AvatarDownloadButton";
 
 function AvatarOptionMenu() {
   const optionButtons = Object.keys(interfaceTree).map(
@@ -27,6 +28,8 @@ function AvatarOptionMenu() {
     <div className=" h-full flex flex-col">
       <header className=" flex h-10 font-light pl-2 bg-slate-600 sticky top-0">
         <h1 className="flex-1 py-2">Customize:</h1>
+
+        <AvatarDownloadButton />
 
         <div className=" w-px bg-slate-700"></div>
       </header>

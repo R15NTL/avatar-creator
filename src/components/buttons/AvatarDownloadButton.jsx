@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import AvatarSvg from "./avatarRender/AvatarSvg";
+import AvatarSvg from "../../avatars/avatarRender/AvatarSvg";
 import { useSelector } from "react-redux";
 import { BsDownload } from "react-icons/bs";
 
@@ -26,10 +26,18 @@ function AvatarDownloadButton() {
   };
   return (
     <button
-      className="fixed top-0 right-0 h-10 p-2 text-light"
+      className="right-0 h-8 p-2 text-light bg-singlePlayer500 border border-singlePlayer400 m-1 rounded-sm align-middle flex
+      transition duration-200 ease-in-out
+      hover:bg-singlePlayer400 hover:border-singlePlayer250
+      active:bg-singlePlayer550  active:border-slate-500"
       onClick={downloadSvg}
     >
-      <BsDownload />
+      <div className=" flex-1 mx-2 ">
+        <BsDownload />
+      </div>{" "}
+      <p className="flex-1 p-0 m-0 self-center whitespace-nowrap align-middle font-light">
+        Download PNG
+      </p>
       <div ref={svgRef} className="hidden w-48 h-48">
         <AvatarSvg styleOptions={styleOptions} pathOptions={pathOptions} />
       </div>

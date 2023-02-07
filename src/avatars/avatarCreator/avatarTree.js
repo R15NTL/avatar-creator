@@ -98,6 +98,19 @@ const styleOptions = {
       leftInnerEar: [["fill", "#D78F82"]],
       expressionlessMouth: [["stroke", "#D78F82"]],
     },
+    // dark
+    {
+      skinPrimary: [["fill", "#CD8D6F"]],
+      skinShadowed: [["fill", "#CE7860"]],
+      leftInnerEar: [["fill", "#C55B3E"]],
+      expressionlessMouth: [["stroke", "#C55B3E"]],
+    },
+    {
+      skinPrimary: [["fill", "#C98465"]],
+      skinShadowed: [["fill", "#CB6E55"]],
+      leftInnerEar: [["fill", "#B95337"]],
+      expressionlessMouth: [["stroke", "#B95337"]],
+    },
     {
       skinPrimary: [["fill", "#C57B59"]],
       skinShadowed: [["fill", "#C66347"]],
@@ -122,6 +135,7 @@ const styleOptions = {
       leftInnerEar: [["fill", "#6C3020"]],
       expressionlessMouth: [["stroke", "#6C3020"]],
     },
+    // yellow
     {
       skinPrimary: [["fill", "#FFD99F"]],
       skinShadowed: [["fill", "#F2CB91"]],
@@ -142,37 +156,243 @@ const styleOptions = {
     },
   ],
   hairColor: [
+    // brown
     {
+      hairDarkShade: [["fill", "#B15F2C"]],
       hairMediumShade: [
-        ["fill", "#f6d372"],
-        ["stroke", "#f6d372"],
+        ["fill", "#CF763F"],
+        ["stroke", "#CF763F"],
       ],
-      hairDarkShade: [["fill", "#f6c752"]],
-      hairLightShade: [["fill", "#f7db94"]],
+      hairLightShade: [["fill", "#D99165"]],
     },
     {
+      hairDarkShade: [["fill", "#8A4B23"]],
+      hairMediumShade: [
+        ["fill", "#B15F2C"],
+        ["stroke", "#B15F2C"],
+      ],
+      hairLightShade: [["fill", "#CF763F"]],
+    },
+    {
+      hairDarkShade: [["fill", "#633519"]],
+      hairMediumShade: [
+        ["fill", "#77401E"],
+        ["stroke", "#77401E"],
+      ],
+      hairLightShade: [["fill", "#8A4B23"]],
+    },
+    // yellow
+    {
+      hairDarkShade: [["fill", "#f6c752"]],
+      hairMediumShade: [
+        ["fill", "#F7CF69"],
+        ["stroke", "#F7CF69"],
+      ],
+      hairLightShade: [["fill", "#F8D782"]],
+    },
+    {
+      hairDarkShade: [["fill", "#F3B924"]],
+      hairMediumShade: [
+        ["fill", "#F6C752"],
+        ["stroke", "#F6C752"],
+      ],
+      hairLightShade: [["fill", "#F7CF69"]],
+    },
+    {
+      hairDarkShade: [["fill", "#DDA20C"]],
+      hairMediumShade: [
+        ["fill", "#F3B924"],
+        ["stroke", "#F3B924"],
+      ],
+      hairLightShade: [["fill", "#F6C752"]],
+    },
+    // orange
+    {
+      hairDarkShade: [["fill", "#FF6403"]],
+      hairMediumShade: [
+        ["fill", "#FF7D2C"],
+        ["stroke", "#FF7D2C"],
+      ],
+      hairLightShade: [["fill", "#FF904C"]],
+    },
+    {
+      hairDarkShade: [["fill", "#D75200"]],
+      hairMediumShade: [
+        ["fill", "#FF6403"],
+        ["stroke", "#FF6403"],
+      ],
+      hairLightShade: [["fill", "#FF7D2C"]],
+    },
+    {
+      hairDarkShade: [["fill", "#AC4200"]],
+      hairMediumShade: [
+        ["fill", "#D75200"],
+        ["stroke", "#D75200"],
+      ],
+      hairLightShade: [["fill", "#FF6403"]],
+    },
+    // black
+    {
+      hairDarkShade: [["fill", "#222235"]],
+      hairMediumShade: [
+        ["fill", "#27273D"],
+        ["stroke", "#27273D"],
+      ],
+      hairLightShade: [["fill", "#3F3F62"]],
+    },
+    // grey
+    {
+      hairDarkShade: [["fill", "#3F3F62"]],
+      hairMediumShade: [
+        ["fill", "#555585"],
+        ["stroke", "#555585"],
+      ],
+      hairLightShade: [["fill", "#7171A4"]],
+    },
+    {
+      hairDarkShade: [["fill", "#555585"]],
+      hairMediumShade: [
+        ["fill", "#7171A4"],
+        ["stroke", "#7171A4"],
+      ],
+      hairLightShade: [["fill", "#9494BB"]],
+    },
+    {
+      hairDarkShade: [["fill", "#7171A4"]],
+      hairMediumShade: [
+        ["fill", "#9494BB"],
+        ["stroke", "#9494BB"],
+      ],
+      hairLightShade: [["fill", "#B8B8D2"]],
+    },
+    {
+      hairDarkShade: [["fill", "#9494BB"]],
+      hairMediumShade: [
+        ["fill", "#B8B8D2"],
+        ["stroke", "#B8B8D2"],
+      ],
+      hairLightShade: [["fill", "#DBDBE8"]],
+    },
+    {
+      hairDarkShade: [["fill", "#B8B8D2"]],
+      hairMediumShade: [
+        ["fill", "#DBDBE8"],
+        ["stroke", "#DBDBE8"],
+      ],
+      hairLightShade: [["fill", "#FFFFFF"]],
+    },
+
+    // pink
+    {
+      hairDarkShade: [["fill", "#E500FF"]],
       hairMediumShade: [
         ["fill", "#EC40FF"],
         ["stroke", "#EC40FF"],
       ],
-      hairDarkShade: [["fill", "#E500FF"]],
       hairLightShade: [["fill", "#F280FF"]],
+    },
+    // blue
+    {
+      hairDarkShade: [["fill", "#00F2FF"]],
+      hairMediumShade: [
+        ["fill", "#49F6FF"],
+        ["stroke", "#49F6FF"],
+      ],
+      hairLightShade: [["fill", "#92FAFF"]],
     },
   ],
   eyebrows: [
+    // black
     {
-      eyebrow: [["stroke", "#27273d"]],
+      eyebrow: [["stroke", "#27273D"]],
+    },
+    //grey
+    {
+      eyebrow: [["stroke", "#555585"]],
+    },
+    {
+      eyebrow: [["stroke", "#7171A4"]],
+    },
+    {
+      eyebrow: [["stroke", "#9494BB"]],
+    },
+    {
+      eyebrow: [["stroke", "#B8B8D2"]],
+    },
+    // brown
+    {
+      eyebrow: [["stroke", "#CF763F"]],
+    },
+    {
+      eyebrow: [["stroke", "#B15F2C"]],
+    },
+    {
+      eyebrow: [["stroke", "#77401E"]],
+    },
+    // yellow
+    {
+      eyebrow: [["stroke", "#F7CF69"]],
+    },
+    {
+      eyebrow: [["stroke", "#F6C752"]],
+    },
+    {
+      eyebrow: [["stroke", "#F3B924"]],
+    },
+    // orange
+    {
+      eyebrow: [["stroke", "#FF7D2C"]],
+    },
+    {
+      eyebrow: [["stroke", "#FF6403"]],
+    },
+    {
+      eyebrow: [["stroke", "#D75200"]],
     },
   ],
   background: [
     {
-      background: [["fill", "#60D2E4"]],
-      backgroundShadow: [["fill", "#4D95A0"]],
+      background: [["fill", "#B99095"]],
+      backgroundShadow: [["fill", "#B18388"]],
+    },
+    {
+      background: [["fill", "#FCB5AC"]],
+      backgroundShadow: [["fill", "#FB9B8E"]],
+    },
+    {
+      background: [["fill", "#B5E5CF"]],
+      backgroundShadow: [["fill", "#9EDDC1"]],
+    },
+    {
+      background: [["fill", "#3D5B59"]],
+      backgroundShadow: [["fill", "#344F4D"]],
+    },
+    {
+      background: [["fill", "#7EC8E3"]],
+      backgroundShadow: [["fill", "#69BFDE"]],
     },
   ],
   earrings: [
     {
       earring: [["fill", "#ffffff"]],
+    },
+    {
+      earring: [["fill", "#080f0f"]],
+    },
+    {
+      earring: [["fill", "#566563"]],
+    },
+    {
+      earring: [["fill", "#a4bab7"]],
+    },
+    {
+      earring: [["fill", "#EFF2C0"]],
+    },
+    {
+      earring: [["fill", "#BEA57D"]],
+    },
+    {
+      earring: [["fill", "#A52422"]],
     },
   ],
 };
@@ -206,13 +426,14 @@ const pathOptions = {
   eyes: [<Eyes />],
   eyebrows: [<EyebrowBase />],
   clothing: [
+    <Jacket1 />,
     <Suit />,
     <VNeck1 />,
     <VNeck2 />,
     <TShirt1 />,
     <TShirt2 />,
     <Shirt />,
-    <Jacket1 />,
+
     <Jacket2 />,
     <Jacket3 />,
     <JacketFemale />,
@@ -326,7 +547,7 @@ const interfaceTree = {
   clothing: {
     components: "clothing",
     componentIndex: 6,
-    componentViewBox: "0 0 512 512",
+    componentViewBox: "0 256 512 256",
     title: "Clothing",
     description: "Select the clothing",
     styleIndex: 1,
@@ -336,7 +557,7 @@ const interfaceTree = {
     colorIndex: null,
     iconComponentName: "clothing",
     iconComponentIndex: 6,
-    iconViewBox: "0 0 512 512",
+    iconViewBox: "0 0 10 512",
     icon: <ClothingIcon />,
   },
   eyebrows: {
@@ -381,7 +602,7 @@ const interfaceTree = {
     colors: "background",
     colorTitle: "Background",
     colorDicription: "Select the color of the background",
-    colorIndex: 5,
+    colorIndex: 4,
     iconComponentName: "",
     iconComponentIndex: 0,
     iconViewBox: "0 0 512 512",
