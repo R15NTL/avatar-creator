@@ -12,40 +12,43 @@ function AvatarOptionButton({ icon, title, buttonIndex }) {
   );
   const [hover, setHover] = useState(false);
 
+  const isSelected = clickedButtonIndex === buttonIndex;
+
   return (
-    <button
-      className={`text-center border border-slate-500 m-2 p-1 rounded-sm shadow-sm shadow-singlePlayer850
+    <div className="relative m-2">
+      <button
+        className={`text-center border  p-1 z-10 relative w-full
     transition duration-200 ease-in-out
-    hover:bg-slate-600 
-    active:bg-singlePlayer550  active:border-slate-500
+    hover:bg-slate-600  border-slate-500
+    active:bg-singlePlayer550  
     ${
-      clickedButtonIndex === buttonIndex
-        ? " bg-singlePlayer500 border-singlePlayer400 hover:bg-singlePlayer400 hover:border-singlePlayer250"
-        : "hover:bg-slate-600 "
+      isSelected
+        ? " bg-singlePlayer200 hover:bg-singlePlayer100 translate-x-1 translate-y-1"
+        : "bg-neutral-50 hover:bg-neutral-200 "
     }
     `}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-      onClick={() => {
-        if (clickedButtonIndex === buttonIndex) {
-          updateAvatarSelectionMenu(null);
-          return;
-        }
-        updateAvatarSelectionMenu(buttonIndex);
-      }}
-    >
-      <div className="p-1">
-        <svg
-          viewBox="0 0 512 512"
-          version="1.1"
-          id="svg64"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g>{React.cloneElement(icon)}</g>
-        </svg>
-      </div>
-      <div
-        className={`
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+        onClick={() => {
+          if (clickedButtonIndex === buttonIndex) {
+            updateAvatarSelectionMenu(null);
+            return;
+          }
+          updateAvatarSelectionMenu(buttonIndex);
+        }}
+      >
+        <div className="p-1">
+          <svg
+            viewBox="0 0 512 512"
+            version="1.1"
+            id="svg64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>{React.cloneElement(icon)}</g>
+          </svg>
+        </div>
+        <div
+          className={`
         mt-2 h-wire-frame rounded-sm transition duration-200 ease-in-out
       ${
         hover
@@ -57,9 +60,15 @@ function AvatarOptionButton({ icon, title, buttonIndex }) {
           : "bg-slate-500"
       }
       `}
-      ></div>
-      <p className=" my-1 font-light text-sm">{title}</p>
-    </button>
+        ></div>
+        <p className=" my-1 font-light text-sm">{title}</p>
+      </button>
+      <span
+        className={`absolute bg-yellow-500 inset-0 translate-x-1 translate-y-1 ${
+          isSelected ? "" : ""
+        }`}
+      />
+    </div>
   );
 }
 
