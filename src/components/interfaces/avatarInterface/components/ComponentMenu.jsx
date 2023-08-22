@@ -16,26 +16,22 @@ function ComponentMenu() {
   const colorComponentElements = getColorComponentElements(thisOption);
 
   return (
-    <div className=" flex flex-col flex-1 ">
+    <div className=" w-full overflow-auto">
       <ComponentMenuHeader
         colorTitle={thisOption ? thisOption.colorTitle : false}
         componentTitle={thisOption ? thisOption.title : false}
       />
 
-      <div className=" flex flex-1 flex-row">
+      <div className="flex">
         <section
-          className={`flex-1  flex flex-col overflow-auto pt-2 pb-6 ${
+          className={`flex-1  flex flex-col pt-2 pb-6 ${
             colorComponentElements ? "" : "hidden"
           }`}
         >
           <div className="h-2"></div>
-          {colorComponentElements && colorComponentElements}
+          {!!colorComponentElements && colorComponentElements}
         </section>
-        <div
-          className={` w-px bg-slate-600 ${
-            optionComponentElements && colorComponentElements ? "" : "hidden"
-          }`}
-        ></div>
+
         <section
           className={`flex-1 flex flex-col 
         ${optionComponentElements ? "" : "hidden"}
@@ -43,7 +39,7 @@ function ComponentMenu() {
         >
           <div className="h-1"></div>
           <div
-            className={`grid pt-2 pb-6 grid-cols-2 px-4 overflow-hidden overflow-y-auto 
+            className={`grid pt-2 pb-6 grid-cols-2 px-4
           phone-md:grid-cols-3  gap-4 
           ${
             colorComponentElements
@@ -52,7 +48,7 @@ function ComponentMenu() {
           }
           `}
           >
-            {optionComponentElements ? optionComponentElements : ""}
+            {optionComponentElements}
           </div>
         </section>
       </div>

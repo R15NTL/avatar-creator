@@ -19,7 +19,7 @@ function AvatarLayout({ styleOptions, pathOptions }) {
           <div className=" w-9 phone-sm:w-16 phone-lg:w-28 phone-xl:w-40 "></div>
         </section>
 
-        <section className=" row-span-1 sm:col-span-1 sm:row-span-2 flex overflow-auto">
+        <section className=" row-span-1 sm:col-span-1 sm:row-span-2 flex overflow-hidden">
           <AvatarInterface />
         </section>
         <section className=" max-sm:hidden sm:col-span-1 sm:row-span-2 bg-light p-16 ">

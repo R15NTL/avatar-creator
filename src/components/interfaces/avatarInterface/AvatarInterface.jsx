@@ -6,7 +6,7 @@ import ComponentMenu from "./components/ComponentMenu";
 function AvatarInterface() {
   const interfaceSelected = useSelector((state) => state.avatarSelectionMenu);
   return (
-    <div className="flex-1 h-full flex">
+    <div className="flex-1 h-full flex relative">
       <div
         className={`flex-1   ${
           interfaceSelected !== null ? "max-lg:hidden" : ""
@@ -18,7 +18,7 @@ function AvatarInterface() {
       </div>
 
       <div
-        className={`flex-1 flex ${
+        className={`flex-1 flex bg-neutral-200 ${
           interfaceSelected === null ? "max-lg:hidden" : ""
         } `}
       >
