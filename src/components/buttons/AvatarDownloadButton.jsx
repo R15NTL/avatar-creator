@@ -26,16 +26,15 @@ function AvatarDownloadButton() {
   };
   return (
     <button
-      className="right-0 h-8 p-2 text-light bg-singlePlayer500 border border-singlePlayer400 m-1 rounded-sm align-middle flex
-      transition duration-200 ease-in-out
-      hover:bg-singlePlayer400 hover:border-singlePlayer250
-      active:bg-singlePlayer550  active:border-slate-500"
+      className="right-0 p-2 m-1 text-sm align-middle flex
+      transition duration-200 ease-in-out border-neutral-700 border
+      bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600 "
       onClick={downloadSvg}
     >
-      <div className=" flex-1 mx-2 ">
+      <div className=" flex-1 mr-2 ">
         <BsDownload />
       </div>{" "}
-      <p className="flex-1 p-0 m-0 self-center whitespace-nowrap align-middle font-light">
+      <p className="flex-1 p-0 m-0 self-center whitespace-nowrap align-middle font-medium">
         Download PNG
       </p>
       <div ref={svgRef} className="hidden w-48 h-48">
