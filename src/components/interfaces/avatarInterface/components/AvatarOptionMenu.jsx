@@ -26,8 +26,8 @@ function AvatarOptionMenu() {
   );
   return (
     <div className=" h-full flex flex-col">
-      <header className=" flex h-10 font-light pl-2 bg-slate-600 sticky top-0">
-        <h1 className="flex-1 py-2">Customize</h1>
+      <header className=" flex h-10 font-light pl-2 bg-singlePlayer200 sticky top-0">
+        <h1 className="flex-1 py-2 font-medium">Customize</h1>
 
         <AvatarDownloadButton />
 
