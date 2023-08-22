@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 
 function AvatarLayout({ styleOptions, pathOptions }) {
   return (
-    <div className=" h-screen flex flex-col bg-slate-700 text-light">
+    <div className=" h-screen flex flex-col bg-neutral-50 text-neutral-900">
       <main className=" pt-10 h-screen flex-1 grid grid-rows-2  sm:grid-cols-2">
         <div className=" fixed top-0 w-screen">
           <HeaderAvatarCreator text="Create your custom avatar" />

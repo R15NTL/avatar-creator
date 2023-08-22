@@ -58,7 +58,7 @@ function AvatarOptionButton({ icon, title, buttonIndex }) {
       }
       `}
       ></div>
-      <p className=" my-1 font-light">{title}</p>
+      <p className=" my-1 font-light text-sm">{title}</p>
     </button>
   );
 }
