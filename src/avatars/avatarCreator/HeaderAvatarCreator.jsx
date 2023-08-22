@@ -5,7 +5,7 @@ function HeaderAvatarCreator({ text }) {
     <header
       className=" h-10 bg-neutral-800 flex items-center relative"
       style={{
-        fontFamily: "IBM Plex Sans",
+        fontFamily: "IBM Plex Mono",
       }}
     >
       <h1 className=" inline-block mx-auto  text-lg font-semibold tracking-wide text-light">
