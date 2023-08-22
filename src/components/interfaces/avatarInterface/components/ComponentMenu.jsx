@@ -37,15 +37,14 @@ function ComponentMenu() {
           }`}
         ></div>
         <section
-          className={`flex-1 flex flex-col pt-2 pb-6
+          className={`flex-1 flex flex-col 
         ${optionComponentElements ? "" : "hidden"}
         `}
         >
           <div className="h-1"></div>
           <div
-            className={`grid grid-cols-2 px-1 h-fit overflow-hidden overflow-y-auto 
-          phone-md:grid-cols-3 
-          
+            className={`grid pt-2 pb-6 grid-cols-2 px-4 overflow-hidden overflow-y-auto 
+          phone-md:grid-cols-3  gap-4 
           ${
             colorComponentElements
               ? `sm:grid-cols-2 lg:grid-cols-1 `
