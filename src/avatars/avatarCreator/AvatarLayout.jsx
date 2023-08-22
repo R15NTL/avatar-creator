@@ -8,7 +8,7 @@ function AvatarLayout({ styleOptions, pathOptions }) {
   return (
     <div className=" h-screen flex flex-col bg-neutral-50 text-neutral-900">
       <main className=" pt-10 h-screen flex-1 grid grid-rows-2  sm:grid-cols-2">
-        <div className=" fixed top-0 w-screen">
+        <div className=" fixed top-0 w-screen z-30">
           <HeaderAvatarCreator text="Create your custom avatar" />
         </div>
         <section className=" row-span-1 bg-light flex sm:col-span-1 sm:row-span-2 sm:hidden">
