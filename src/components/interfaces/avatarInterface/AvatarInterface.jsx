@@ -1,12 +1,4 @@
 import React from "react";
-import {
-  interfaceTree,
-  styleOptions,
-  pathOptions,
-} from "../../../avatars/avatarCreator/avatarTree";
-import AvatarColorOption from "../../buttons/AvatarColorOption";
-import AvatarComponentOption from "../../buttons/AvatarComponentOption";
-import ColorMenu from "./components/ColorMenu";
 import { useSelector } from "react-redux";
 import AvatarOptionMenu from "./components/AvatarOptionMenu";
 import ComponentMenu from "./components/ComponentMenu";

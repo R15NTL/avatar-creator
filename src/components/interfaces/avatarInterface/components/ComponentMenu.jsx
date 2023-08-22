@@ -1,8 +1,5 @@
 import React from "react";
-import Close from "../../../icons/Close";
-import { useDispatch, useSelector } from "react-redux";
-import { bindActionCreators } from "redux";
-import { actionCreators } from "../../../../Redux";
+import { useSelector } from "react-redux";
 import {
   styleOptions,
   interfaceTree,
@@ -13,15 +10,8 @@ import AvatarColorOption from "../../../buttons/AvatarColorOption";
 import ComponentMenuHeader from "./ComponentMenuHeader";
 
 function ComponentMenu() {
-  const dispatch = useDispatch();
-  const { updateAvatarSelectionMenu } = bindActionCreators(
-    actionCreators,
-    dispatch
-  );
-
   const interfaceSelected = useSelector((state) => state.avatarSelectionMenu);
   const thisOption = convertSelectedIndexToInterfaceTree(interfaceSelected);
-  const optionIsSelected = interfaceSelected !== null;
   const optionComponentElements = getOptionComponentElements(thisOption);
   const colorComponentElements = getColorComponentElements(thisOption);
 
@@ -32,14 +22,14 @@ function ComponentMenu() {
         componentTitle={thisOption ? thisOption.title : false}
       />
 
-      <div className=" flex flex-1 flex-row ">
+      <div className=" flex flex-1 flex-row">
         <section
-          className={`flex-1  flex flex-col overflow-auto ${
+          className={`flex-1  flex flex-col overflow-auto pt-2 pb-6 ${
             colorComponentElements ? "" : "hidden"
           }`}
         >
           <div className="h-2"></div>
-          {colorComponentElements ? colorComponentElements : ""}
+          {colorComponentElements && colorComponentElements}
         </section>
         <div
           className={` w-px bg-slate-600 ${
@@ -47,13 +37,13 @@ function ComponentMenu() {
           }`}
         ></div>
         <section
-          className={`flex-1 flex flex-col
+          className={`flex-1 flex flex-col pt-2 pb-6
         ${optionComponentElements ? "" : "hidden"}
         `}
         >
           <div className="h-1"></div>
           <div
-            className={`grid grid-cols-2 px-1 h-fit overflow-hidden overflow-y-auto
+            className={`grid grid-cols-2 px-1 h-fit overflow-hidden overflow-y-auto 
           phone-md:grid-cols-3 
           
           ${

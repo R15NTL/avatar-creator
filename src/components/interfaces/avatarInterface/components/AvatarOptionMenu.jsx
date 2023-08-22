@@ -27,14 +27,14 @@ function AvatarOptionMenu() {
   return (
     <div className=" h-full flex flex-col">
       <header className=" flex h-10 font-light pl-2 bg-slate-600 sticky top-0">
-        <h1 className="flex-1 py-2">Customize:</h1>
+        <h1 className="flex-1 py-2">Customize</h1>
 
         <AvatarDownloadButton />
 
         <div className=" w-px bg-slate-700"></div>
       </header>
       <div className="flex-1 flex">
-        <div className="flex-1 h-fit overflow-auto grid grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 ">
+        <div className="flex-1 h-fit overflow-auto grid grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 pt-2 pb-6 ">
           {optionButtons}
         </div>
         <div className="w-px bg-slate-600"></div>
