@@ -23,7 +23,7 @@ export const AvatarComponentOption = (props) => {
   const component = option;
   return (
     <OptionButtonBase
-      className={!isSelected && "bg-neutral-200 hover:bg-neutral-300"}
+      className={!isSelected && "bg-neutral-200"}
       isSelected={isSelected}
       onClick={() =>
         updateAvatarComponentSelectorOption(componentIndex, optionIndex)

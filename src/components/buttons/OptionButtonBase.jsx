@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { cn } from "../../utils/tailwind";
 
 export default function OptionButtonBase({
@@ -6,17 +6,31 @@ export default function OptionButtonBase({
   onClick,
   children,
   className,
-  ...props
+  ...other
 }) {
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseEnter = (e) => {
+    setIsHovering(true);
+    other.onMouseEnter?.(e);
+  };
+
+  const handleMouseLeave = (e) => {
+    setIsHovering(false);
+    other.onMouseLeave?.(e);
+  };
+
   return (
     <div className="relative">
       <button
-        {...props}
+        {...other}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
         className={cn(
-          `text-center border-2 p-2 z-10 relative w-full transition duration-200 ease-in-out hover:bg-slate-600 border-neutral-800 active:bg-singlePlayer300`,
+          `text-center border-2 p-2 z-10 relative w-full transition duration-200 ease-in-out  border-neutral-800 active:bg-singlePlayer300`,
           isSelected
-            ? " bg-singlePlayer200 hover:bg-singlePlayer100 translate-x-1 translate-y-1"
-            : "bg-neutral-50 hover:bg-neutral-200",
+            ? " bg-singlePlayer200  translate-x-1 translate-y-1"
+            : "bg-neutral-50 ",
           className
         )}
         onClick={onClick}
@@ -24,9 +38,9 @@ export default function OptionButtonBase({
         {children}
       </button>
       <span
-        className={`absolute bg-yellow-500 inset-0 translate-x-1 translate-y-1 ${
-          isSelected ? "" : ""
-        }`}
+        className={`absolute  inset-0 translate-x-1 translate-y-1 ${
+          isHovering ? "bg-teal-300" : `bg-yellow-500`
+        } ${isSelected ? "" : ""}`}
       />
     </div>
   );

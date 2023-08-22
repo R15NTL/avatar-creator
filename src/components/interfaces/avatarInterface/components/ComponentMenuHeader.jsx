@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Close from "../../../icons/Close";
+import React from "react";
+import CloseButton from "../../../buttons/CloseButton";
 import { useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
 import { actionCreators } from "../../../../Redux";
@@ -10,7 +10,6 @@ function ComponentMenuHeader({ interFaceName, colorTitle, componentTitle }) {
     actionCreators,
     dispatch
   );
-  const [isHovered, setIsHovered] = useState(false);
 
   const closeButtonToShow = componentTitle ? 2 : 1;
 
@@ -21,37 +20,31 @@ function ComponentMenuHeader({ interFaceName, colorTitle, componentTitle }) {
         fontFamily: "IBM Plex Mono",
       }}
     >
-      <section
+      <div
         className={`flex-1 py-2 px-4 flex font-medium ${
           colorTitle ? "" : `hidden`
         }`}
       >
         <h1 className="flex-1">{colorTitle}</h1>
-        <button
+        <CloseButton
           className={closeButtonToShow === 1 ? "lg:hidden" : "hidden"}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
           onClick={() => {
             updateAvatarSelectionMenu(null);
           }}
-        >
-          <Close color={isHovered ? "#9C59F5" : "#F1F1F1"} key={"frb849"} />
-        </button>
-      </section>
+        />
+      </div>
 
-      <section className={`flex-1 py-2 flex ${componentTitle ? "" : `hidden`}`}>
-        <h1 className="flex-1 font-medium px-4">{componentTitle}</h1>
-        <button
+      <div
+        className={`flex-1 py-2 flex px-4 ${componentTitle ? "" : `hidden`}`}
+      >
+        <h1 className="flex-1 font-medium">{componentTitle}</h1>
+        <CloseButton
           className={closeButtonToShow === 2 ? "lg:hidden" : "hidden"}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
           onClick={() => {
             updateAvatarSelectionMenu(null);
           }}
-        >
-          <Close hoverColor="#9C59F5" key={"rfb803"} />
-        </button>
-      </section>
+        />
+      </div>
     </header>
   );
 }

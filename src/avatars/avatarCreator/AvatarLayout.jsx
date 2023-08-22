@@ -22,7 +22,7 @@ function AvatarLayout({ styleOptions, pathOptions }) {
         <section className=" row-span-1 sm:col-span-1 sm:row-span-2 flex overflow-hidden">
           <AvatarInterface />
         </section>
-        <section className=" max-sm:hidden sm:col-span-1 sm:row-span-2 bg-teal-100 p-16 pt-26 relative">
+        <section className=" max-sm:hidden sm:col-span-1 sm:row-span-2 bg-neutral-50 p-16 pt-26 relative">
           <header
             className=" absolute left-0 w-full h-10 top-0 bg-singlePlayer200 pl-4 flex items-center font-medium"
             style={{
