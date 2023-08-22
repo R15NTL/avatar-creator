@@ -5,7 +5,7 @@ function BackgroundIcon() {
     <rect
       style={{
         fill: "none",
-        stroke: "#ffffff",
+        stroke: "#18181b",
         strokeWidth: "10",
         strokeDasharray: "none",
         strokeOpacity: "1",

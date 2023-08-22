@@ -9,7 +9,7 @@ function EyewearIcon() {
         id="circle4203"
         style={{
           fill: "none",
-          stroke: "#ffffff",
+          stroke: "#18181b",
           strokeWidth: "12.033px",
           strokeMiterlimit: "10",
         }}
@@ -21,7 +21,7 @@ function EyewearIcon() {
         id="circle4211"
         style={{
           fill: "none",
-          stroke: "#ffffff",
+          stroke: "#18181b",
           strokeWidth: "12.033px",
           strokeMiterlimit: "10",
         }}
@@ -32,7 +32,7 @@ function EyewearIcon() {
         id="path4221"
         style={{
           fill: "none",
-          stroke: "#ffffff",
+          stroke: "#18181b",
           strokeWidth: "12.033px",
           strokeMiterlimit: "10",
         }}

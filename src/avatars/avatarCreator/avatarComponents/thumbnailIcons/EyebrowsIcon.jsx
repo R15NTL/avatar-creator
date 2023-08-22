@@ -7,7 +7,7 @@ function EyebrowsIcon() {
         d="m 29.713911,262.83039 c 0,0 77.247769,-40.28285 143.942109,0"
         style={{
           fill: "none",
-          stroke: "#ffffff",
+          stroke: "#18181b",
           strokeWidth: "16.3px",
           strokeMiterlimit: "10",
           strokeLinecap: "round",
@@ -18,7 +18,7 @@ function EyebrowsIcon() {
         d="m 327.28413,262.83039 c 0,0 77.24779,-40.28285 143.91798,0"
         style={{
           fill: "none",
-          stroke: "#ffffff",
+          stroke: "#18181b",
           strokeWidth: "16.3px",
           strokeMiterlimit: "10",
           strokeLinecap: "round",

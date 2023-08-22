@@ -8,7 +8,7 @@ function ClothingIcon() {
         style={{
           fill: "none",
           strokeWidth: "10",
-          stroke: "#ffffff",
+          stroke: "#18181b",
           strokeDasharray: "none",
           strokeOpacity: "1",
           strokeLinecap: "round",
