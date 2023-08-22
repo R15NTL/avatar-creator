@@ -22,7 +22,7 @@ function AvatarLayout({ styleOptions, pathOptions }) {
         <section className=" row-span-1 sm:col-span-1 sm:row-span-2 flex overflow-hidden">
           <AvatarInterface />
         </section>
-        <section className=" max-sm:hidden sm:col-span-1 sm:row-span-2 bg-light p-16 ">
+        <section className=" max-sm:hidden sm:col-span-1 sm:row-span-2 bg-neutral-50 p-16 ">
           <AvatarSvg styleOptions={styleOptions} pathOptions={pathOptions} />
         </section>
       </main>

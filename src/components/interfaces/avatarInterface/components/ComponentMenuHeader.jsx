@@ -15,7 +15,12 @@ function ComponentMenuHeader({ interFaceName, colorTitle, componentTitle }) {
   const closeButtonToShow = componentTitle ? 2 : 1;
 
   return (
-    <header className="flex align-middle font-light bg-singlePlayer200 h-10 sticky top-0 z-20">
+    <header
+      className="flex align-middle font-light bg-singlePlayer200 h-10 sticky top-0 z-20"
+      style={{
+        fontFamily: "IBM Plex Mono",
+      }}
+    >
       <section
         className={`flex-1 py-2 px-4 flex font-medium ${
           colorTitle ? "" : `hidden`

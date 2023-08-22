@@ -44,7 +44,14 @@ function AvatarOptionButton({ icon, title, buttonIndex }) {
       
       `}
       ></div>
-      <p className=" my-1 font-light text-sm">{title}</p>
+      <p
+        className=" my-1 text-sm sm:text-xs 2xl:text-sm"
+        style={{
+          fontFamily: "IBM Plex Mono",
+        }}
+      >
+        {title}
+      </p>
     </OptionButtonBase>
   );
 }

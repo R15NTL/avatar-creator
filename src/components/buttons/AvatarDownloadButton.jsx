@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
 import AvatarSvg from "../../avatars/avatarRender/AvatarSvg";
 import { useSelector } from "react-redux";
-import { BsDownload } from "react-icons/bs";
+import { cn } from "../../utils/tailwind";
+import { Icon } from "@iconify/react";
 
-function AvatarDownloadButton() {
+function AvatarDownloadButton({ className }) {
   const svgRef = useRef();
   const styleOptions = useSelector((state) => state.avatarStyleSelector);
   const pathOptions = useSelector((state) => state.avatarComponentSelector);
@@ -26,17 +27,17 @@ function AvatarDownloadButton() {
   };
   return (
     <button
-      className="right-0 p-2 m-1 text-sm align-middle flex
-      transition duration-200 ease-in-out border-neutral-800 border-2
-      bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600 "
+      className={cn(
+        "right-0 px-2 my-1 text-sm font-medium align-middle flex transition duration-200 ease-in-out border-neutral-800 border-2 bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600",
+        className
+      )}
       onClick={downloadSvg}
     >
-      <div className=" flex-1 mr-2 ">
-        <BsDownload />
-      </div>{" "}
-      <p className="flex-1 p-0 m-0 self-center whitespace-nowrap align-middle font-medium">
-        Download PNG
-      </p>
+      <Icon
+        icon="pixelarticons:arrow-bar-down"
+        className=" self-center mr-1.5"
+      />
+      <span className="p-0 m-0 self-center  ">Download PNG</span>
       <div ref={svgRef} className="hidden w-48 h-48">
         <AvatarSvg styleOptions={styleOptions} pathOptions={pathOptions} />
       </div>
