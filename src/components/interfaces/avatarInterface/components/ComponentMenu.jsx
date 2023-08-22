@@ -24,12 +24,11 @@ function ComponentMenu() {
 
       <div className="flex">
         <section
-          className={`flex-1  flex flex-col pt-2 pb-6 ${
+          className={`flex-1  grid mb-auto gap-0.5 pt-4 pb-6 px-4 ${
             colorComponentElements ? "" : "hidden"
           }`}
         >
-          <div className="h-2"></div>
-          {!!colorComponentElements && colorComponentElements}
+          {colorComponentElements}
         </section>
 
         <section

@@ -40,7 +40,7 @@ function AvatarOptionButton({ icon, title, buttonIndex }) {
       </div>
       <div
         className={`
-        mt-2 h-wire-frame rounded-sm transition duration-200 ease-in-out bg-neutral-900
+        mt-2 h-wire-frame rounded-sm transition duration-200 ease-in-out bg-neutral-800
       
       `}
       ></div>

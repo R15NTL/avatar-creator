@@ -17,7 +17,9 @@ function ComponentMenuHeader({ interFaceName, colorTitle, componentTitle }) {
   return (
     <header className="flex align-middle font-light bg-singlePlayer200 h-10 sticky top-0 z-20">
       <section
-        className={`flex-1 p-2 flex font-medium ${colorTitle ? "" : `hidden`}`}
+        className={`flex-1 py-2 px-4 flex font-medium ${
+          colorTitle ? "" : `hidden`
+        }`}
       >
         <h1 className="flex-1">{colorTitle}</h1>
         <button
@@ -32,8 +34,8 @@ function ComponentMenuHeader({ interFaceName, colorTitle, componentTitle }) {
         </button>
       </section>
 
-      <section className={`flex-1 p-2 flex ${componentTitle ? "" : `hidden`}`}>
-        <h1 className="flex-1 font-medium">{componentTitle}</h1>
+      <section className={`flex-1 py-2 flex ${componentTitle ? "" : `hidden`}`}>
+        <h1 className="flex-1 font-medium px-4">{componentTitle}</h1>
         <button
           className={closeButtonToShow === 2 ? "lg:hidden" : "hidden"}
           onMouseEnter={() => setIsHovered(true)}

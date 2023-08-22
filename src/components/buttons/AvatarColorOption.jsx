@@ -24,12 +24,12 @@ export const AvatarColorOption = (props) => {
       style={{
         backgroundColor: colors[0],
       }}
-      className={` transition-all duration-250 h-8 ml-2 shadow-sm flex flex-row rounded-tr-md rounded-tl-2xl 
+      className={` transition-all duration-250 h-8 shadow-sm flex flex-row rounded-tr-md rounded-tl-2xl 
       rounded-bl-sm rounded-br-2xl cursor-pointer  overflow-hidden
-      sm:h-12
+      sm:h-12 border-2 border-neutral-800
        ${
          selectedButtonInThisMenu === optionIndex
-           ? "mr-4 hover:mr-2"
+           ? "mr-1 hover:mr-0"
            : "mr-12 hover:mr-10"
        } `}
       onClick={() => updateAvatarStyleSelectorOption(menuIndex, optionIndex)}

@@ -27,7 +27,7 @@ function AvatarDownloadButton() {
   return (
     <button
       className="right-0 p-2 m-1 text-sm align-middle flex
-      transition duration-200 ease-in-out border-neutral-700 border
+      transition duration-200 ease-in-out border-neutral-800 border-2
       bg-yellow-500 hover:bg-yellow-400 active:bg-yellow-600 "
       onClick={downloadSvg}
     >
