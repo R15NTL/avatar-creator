@@ -3,6 +3,7 @@ import HeaderAvatarCreator from "./HeaderAvatarCreator";
 import AvatarSvg from "../avatarRender/AvatarSvg";
 import AvatarInterface from "../../components/interfaces/avatarInterface/AvatarInterface";
 import { connect } from "react-redux";
+import AvatarDownloadButton from "../../components/buttons/AvatarDownloadButton";
 
 function AvatarLayout({ styleOptions, pathOptions }) {
   return (
@@ -24,12 +25,13 @@ function AvatarLayout({ styleOptions, pathOptions }) {
         </section>
         <section className=" max-sm:hidden sm:col-span-1 sm:row-span-2 bg-neutral-50 p-16 pt-26 relative">
           <header
-            className=" absolute left-0 w-full h-10 top-0 bg-singlePlayer200 pl-4 flex items-center font-medium"
+            className=" absolute left-0 py-1 w-full h-10 top-0 bg-singlePlayer200 px-4 flex items-center font-medium"
             style={{
               fontFamily: "IBM Plex Mono",
             }}
           >
             <p>Preview</p>
+            <AvatarDownloadButton className="ml-auto h-full hidden sm:flex " />
           </header>
           <AvatarSvg styleOptions={styleOptions} pathOptions={pathOptions} />
         </section>
