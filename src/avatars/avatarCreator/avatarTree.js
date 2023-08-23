@@ -374,6 +374,9 @@ const styleOptions = {
   ],
   earrings: [
     {
+      earring: [["fill", "#f6c752"]],
+    },
+    {
       earring: [["fill", "#ffffff"]],
     },
     {
@@ -393,9 +396,6 @@ const styleOptions = {
     },
     {
       earring: [["fill", "#A52422"]],
-    },
-    {
-      earring: [["fill", "#f6c752"]],
     },
   ],
 };
