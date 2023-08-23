@@ -37,7 +37,7 @@ function AvatarOptionMenu() {
         <AvatarDownloadButton className="sm:hidden" />
       </header>
       <div className="flex-1 flex">
-        <div className="flex-1 h-fit overflow-auto grid grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 pt-4 pb-8 gap-4 px-4">
+        <div className="flex-1 h-fit overflow-auto grid grid-cols-3 lg:grid-cols-2 2xl:grid-cols-3 pt-4 pb-8 gap-4 px-4">
           {optionButtons}
         </div>
       </div>

@@ -40,12 +40,12 @@ function AvatarOptionButton({ icon, title, buttonIndex }) {
       </div>
       <div
         className={`
-        mt-2 h-wire-frame rounded-sm transition duration-200 ease-in-out bg-neutral-800
+        mt-2 h-[2px] transition duration-200 ease-in-out bg-neutral-800
       
       `}
       ></div>
       <p
-        className=" my-1 text-sm sm:text-xs 2xl:text-sm"
+        className=" my-1 text-sm  2xl:text-sm whitespace-nowrap overflow-hidden overflow-ellipsis text-center"
         style={{
           fontFamily: "IBM Plex Mono",
         }}
