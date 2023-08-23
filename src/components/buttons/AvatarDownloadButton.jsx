@@ -35,7 +35,7 @@ function AvatarDownloadButton({ className }) {
     >
       <Icon
         icon="pixelarticons:arrow-bar-down"
-        className=" self-center mr-1.5"
+        className=" self-center mr-1.5 w-5 h-5"
       />
       <span className="p-0 m-0 self-center  ">Download PNG</span>
       <div ref={svgRef} className="hidden w-48 h-48">

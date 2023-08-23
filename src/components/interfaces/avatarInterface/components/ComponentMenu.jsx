@@ -32,23 +32,17 @@ function ComponentMenu() {
         </section>
 
         <section
-          className={`flex-1 flex flex-col 
+          className={`flex-1  grid pt-4 pb-6 grid-cols-2 px-4 mb-auto
+          phone-md:grid-cols-3  gap-4 
         ${optionComponentElements ? "" : "hidden"}
+        ${
+          colorComponentElements
+            ? `sm:grid-cols-2 lg:grid-cols-1 `
+            : `sm:grid-cols-3 lg:grid-cols-2`
+        }
         `}
         >
-          <div className="h-1"></div>
-          <div
-            className={`grid pt-2 pb-6 grid-cols-2 px-4
-          phone-md:grid-cols-3  gap-4 
-          ${
-            colorComponentElements
-              ? `sm:grid-cols-2 lg:grid-cols-1 `
-              : `sm:grid-cols-3 lg:grid-cols-2`
-          }
-          `}
-          >
-            {optionComponentElements}
-          </div>
+          {optionComponentElements}
         </section>
       </div>
     </div>

@@ -7,7 +7,7 @@ export default function CloseButton({ className, ...other }) {
     <button
       {...other}
       className={cn(
-        "w-6 h-6 bg-yellow-500 hover:bg-teal-100 border-2 border-neutral-800 flex items-end justify-center text-center",
+        "w-8 h-8 p-0.5 bg-yellow-500 hover:bg-teal-100 border-2 border-neutral-800 flex items-end justify-center text-center",
         className
       )}
     >

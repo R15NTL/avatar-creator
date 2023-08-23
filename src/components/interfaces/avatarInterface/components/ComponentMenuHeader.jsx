@@ -21,7 +21,7 @@ function ComponentMenuHeader({ interFaceName, colorTitle, componentTitle }) {
       }}
     >
       <div
-        className={`flex-1 py-2 px-4 flex font-medium ${
+        className={`flex-1 py-1 px-4 flex items-center font-medium ${
           colorTitle ? "" : `hidden`
         }`}
       >
@@ -35,7 +35,9 @@ function ComponentMenuHeader({ interFaceName, colorTitle, componentTitle }) {
       </div>
 
       <div
-        className={`flex-1 py-2 flex px-4 ${componentTitle ? "" : `hidden`}`}
+        className={`flex-1 py-1 flex items-center px-4 ${
+          componentTitle ? "" : `hidden`
+        }`}
       >
         <h1 className="flex-1 font-medium">{componentTitle}</h1>
         <CloseButton
